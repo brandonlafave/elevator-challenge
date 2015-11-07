@@ -1,0 +1,114 @@
+body {
+  position: relative;
+}
+
+p, body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+section p {
+  font-size: 20em;
+}
+
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.floor {
+  width: 100%;
+  height: 400px;
+}
+
+.first-floor {
+  background-color: purple;
+}
+
+.second-floor {
+  background-color: red;
+}
+
+.third-floor {
+  background-color: green;
+}
+
+.fourth-floor {
+  background-color: orange;
+}
+
+.elevator {
+  z-index: 1;
+  position: fixed;
+  background-color: #a8a8a8;
+  width: 14em;
+  height: 20.5em;
+  top: .5em;
+  right: .5em;
+  border-radius: .25em;
+}
+
+.elevator__display-panel {
+  height: 8em;
+  background-color: black;
+  margin: 1em;
+}
+
+.elevator__floor-number {
+  float: left;
+  width: 75%;
+  height: 100%;
+}
+.elevator__indicator-container {
+  width: 25%;
+  float: right;
+}
+.elevator__indicator {
+  width: 1.5em;
+  height: 1.5em;
+  margin: .25em auto;
+}
+
+.elevator__indicator--up {
+  background-color: green;
+}
+
+.elevator__indicator--down {
+  background-color: red;
+}
+
+.btn {
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  margin: 1em;
+  background-color: #D3D3D3;
+  cursor: pointer;
+}
+
+.black-border {
+  border: 3px solid black;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.isSelected {
+  border: 3px solid yellow;
+}
+
+.floor-number {
+  font-size: 5em;
+}
